@@ -25,7 +25,10 @@ class PyTest(TestCommand):
 
     def finalize_options(self):
         TestCommand.finalize_options(self)
-        self.test_args = ['--pylint', '--pylint-error-types=FEW']
+        # TODO: Re-enable linting in tests
+        # when https://github.com/PyCQA/pylint/issues/1113 is fixed
+        # self.test_args = ['--pylint', '--pylint-error-types=FEW']
+        self.test_args = []
         self.test_suite = True
 
     def run_tests(self):
