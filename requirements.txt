@@ -12,7 +12,7 @@ lazy-object-proxy==1.2.2
 MarkupSafe==0.23
 mccabe==0.6.1
 packaging==16.8
-py==1.4.32
+py==1.10.0
 Pygments==2.2.0
 pylint==1.6.5
 pyparsing==2.1.10
